@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodRating">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating For Food"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/qualityTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality"
+        android:textSize="20sp"
+        android:layout_below="@+id/title"
+
+        />
+
+    <RatingBar
+        android:id="@+id/quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/qualityTxt"
+        android:rating="1"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/quantityTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="20sp"
+        android:layout_below="@+id/quality"
+        />
+
+    <RatingBar
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quality"
+        android:layout_marginLeft="80dp"
+        android:stepSize="0.1"
+        android:rating="1"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/quantityTxt" />
+
+    <TextView
+        android:id="@+id/easeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Ease of Ordering"
+        android:layout_below="@+id/quantity"
+
+        />
+
+    <RatingBar
+        android:id="@+id/ease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="1"
+        android:layout_below="@+id/quantity"
+        android:layout_marginLeft="5dp"
+        android:stepSize="0.1"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/easeTxt" />
+
+    <TextView
+        android:id="@+id/deliveryTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Time"
+        android:textSize="20sp"
+        android:layout_below="@+id/ease"
+
+        />
+
+    <RatingBar
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ease"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="1dp"
+        android:stepSize="0.1"
+        android:rating="1"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@+id/deliveryTxt" />
+
+    <Button
+        android:id="@+id/submitRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Rating"
+        android:layout_below="@id/delivery"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/overallTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitRating"
+        android:layout_marginTop="18dp"
+        android:text="Overall Rating"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/overall"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitRating"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/overallTxt"
+        android:isIndicator="true"
+        android:rating="1"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/overallTxtRealTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overall"
+        android:layout_marginTop="18dp"
+        android:text="Real Time Rating"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/overallRealTime"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overall"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/overallTxt"
+        android:isIndicator="true"
+        android:rating="1"
+        android:stepSize="0.1" />
+
+
+</RelativeLayout>
+</ScrollView>
